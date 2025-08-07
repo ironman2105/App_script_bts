@@ -226,9 +226,19 @@
         </p>
       </div>
 
+
       <div class="px-6 py-8 space-y-8">
         <!-- Personal Information Section -->
-      <form id="astroForm">
+         <form id="astroForm" enctype="multipart/form-data">
+  <input type="text" name="name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="tel" name="phone" placeholder="Phone" required />
+  <input type="date" name="birthdate" required />
+  <input type="time" name="birthtime" required />
+  <input type="file" name="pancard" required />
+  <button type="submit">Submit</button>
+</form>
+      <!--<form id="astroForm">
   <input type="text" name="name" placeholder="Name" required />
   <input type="email" name="email" placeholder="Email" required />
   <input type="tel" name="phone" placeholder="Phone" required />
@@ -237,7 +247,7 @@
   <input type="text" name="birthplace" placeholder="Place of Birth" required />
   <input type="file" name="pancard" accept=".pdf,.jpg,.jpeg,.png" required />
   <button type="submit">Submit</button>
-</form>
+</form>-->
 
 <script>
   const form = document.getElementById("astroForm");
