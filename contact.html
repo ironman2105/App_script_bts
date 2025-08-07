@@ -1,0 +1,387 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Contact Us
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+
+           .consult-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .consult-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .consult-link:hover {
+     color: #111827;
+   }
+   .consult-link:hover::before {
+     left: 0;
+   }
+
+       .index-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .index-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .index-link:hover {
+     color: #111827;
+   }
+   .index-link:hover::before {
+     left: 0;
+   }
+
+       .services-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .services-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .services-link:hover {
+     color: #111827;
+   }
+   .services-link:hover::before {
+     left: 0;
+   }
+
+       .about-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .about-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .about-link:hover {
+     color: #111827;
+   }
+   .about-link:hover::before {
+     left: 0;
+   }
+  </style>
+ </head>
+ <body class="bg-[#f8fbff] text-[#0f172a]">
+    <header class="w-full border-b border-gray-200">
+   <nav class="max-w-9xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-20">
+    <a class="flex items-center space-x-3" href="#">
+     <img alt="ChronoCalc logo with checkmark icon in purple rounded square background" class="w-60 h-50 rounded-xl" height="90" src="astrofact_logo-removebg-preview.png" width="90"/>
+     <div class="leading-tight">
+      <p class="font-semibold text-gray-900 text-base">
+       ASTROFACT
+      </p>
+      <p class="text-xs text-gray-500 -mt-0.5">
+       to Know means to grow
+      </p>
+     </div>
+    </a>
+    <ul class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-900">
+     <li>
+        <a class="index-link" href="index.html"> 
+        Home
+      </a>
+     </li>
+     <li>
+          <a class="about-link" href="about.html"> 
+       About Us
+      </a>
+     </li>
+     <li>
+      <a class="services-link" href="services.html">
+       Services
+      </a>
+     </li>
+     <li>
+       <a aria-current="page" class="bg-[#05081e] text-white rounded-md px-4 py-2" href="#">
+       Contact
+      </a>
+     </li>
+     <li>
+      <a class="consult-link" href="consult.html">
+       Consultation Form
+      </a>
+     </li>
+    </ul>
+    <a class="hidden md:inline-block border border-gray-300 rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">
+     View Reports
+    </a>
+   </nav>
+  </header>
+  <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+   <button class="mb-6 text-xs text-[#2563eb] border border-[#2563eb] rounded px-3 py-1 hover:bg-[#2563eb] hover:text-white transition" type="button">
+    Contact Us
+   </button>
+   <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
+    Get In Touch With Our Experts
+   </h1>
+   <p class="text-[#334155] max-w-xl mx-auto mb-12 text-base sm:text-lg leading-relaxed">
+    Have questions about our services? Ready to start your consultation? Our team is here to help you every step of the way.
+   </p>
+   <h2 class="text-xl sm:text-2xl font-bold mb-8">
+    How to Reach Us
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center">
+     <img alt="Email icon with envelope and at symbol in purple and blue colors" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/d24f1006-934b-4d74-a3d6-d1ff6ce0a98a.jpg" width="40"/>
+     <h3 class="font-semibold mb-1">
+      Email Support
+     </h3>
+     <p class="text-gray-500 mb-2 text-center text-sm leading-relaxed">
+      Get detailed responses to your questions
+     </p>
+     <p class="font-semibold mb-4">
+      astrofact.india@gmail.com
+     </p>
+     <button class="border border-gray-300 rounded px-4 py-1 text-sm hover:bg-gray-100 transition" type="button" onclick="window.location.href='mailto:astrofact.india@gmail.com'">
+      Contact Now
+     </button>
+    </div>
+    <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center">
+     <img alt="Phone icon in pink and red colors" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/25e206e6-f0b4-4358-ee5b-0f8067f9fdbd.jpg" width="40"/>
+     <h3 class="font-semibold mb-1">
+      Phone Consultation
+     </h3>
+     <p class="text-gray-500 mb-2 text-center text-sm leading-relaxed">
+      Speak directly with our specialists
+     </p>
+     <p class="font-semibold mb-4">
+      +91 92271 12025
+     </p>
+     <button class="border border-gray-300 rounded px-4 py-1 text-sm hover:bg-gray-100 transition" type="button" onclick="window.location.href='tel:+919227112025'">
+      Contact Now
+     </button>
+    </div>
+    <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center">
+     <img alt="Chat bubble icon in light purple and white colors" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/8674bdca-2db2-4919-b29a-06a42e4efc3c.jpg" width="40"/>
+     <h3 class="font-semibold mb-1">
+      Live Chat
+     </h3>
+     <p class="text-gray-500 mb-2 text-center text-sm leading-relaxed">
+      Instant support for quick questions
+     </p>
+     <p class="font-semibold mb-4">
+      Available on website
+     </p>
+     <button class="border border-gray-300 rounded px-4 py-1 text-sm hover:bg-gray-100 transition" type="button">
+      Contact Now
+     </button>
+    </div>
+    <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center">
+     <img alt="Video camera icon in dark purple and black colors" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/4126e9f4-dbba-4518-8d90-9fc031800397.jpg" width="40"/>
+     <h3 class="font-semibold mb-1">
+      Location
+     </h3>
+     <p class="text-gray-500 mb-2 text-center text-sm leading-relaxed">
+      Personal one-on-one meetings
+     </p>
+     <p class="font-semibold mb-4">
+      G-09, Rajshree City Centre, KshetrapaL Mandir Road, Surat - 395003
+     </p>
+     <button class="border border-gray-300 rounded px-4 py-1 text-sm hover:bg-gray-100 transition" type="button" 
+      onclick="window.open('https://www.google.com/maps/dir//Sagrampura+Main+Rd,+Rudrapura,+Surat,+Gujarat+395002/@21.1883604,72.7428843,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be04f40a4ba5aa5:0x516e7e41971e7858!2m2!1d72.8253122!2d21.1883756?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw%3D%3D')">
+      Contact Now
+     </button>
+    </div>
+   </div>
+  </div>
+    
+  <!--<div class="bg-[#f8fbfd] rounded-xl w-full max-w-4xl p-10">
+    <h2 class="text-center text-[#0a1f44] font-extrabold text-xl mb-10">Our Locations</h2>
+    <div class="max-w-xs bg-white rounded-xl p-6 border border-transparent shadow-sm">
+      <a href="#" class="text-blue-600 mb-4 block">Surat ( Gujarat), India</a>
+      <div>
+        <p class="font-bold mb-1">Address:</p>
+        <p class="text-gray-600 mb-4 leading-relaxed">G-09, Rajshree City Centre, KshetrapaL Mandir Road, Surat - 395003</p>
+        <hr class="border-gray-300 mb-4" />
+        <p class="font-bold mb-1">Phone:</p>
+        <p class="mb-4 text-gray-600">+91 92271 12025</p>
+        <p class="font-bold mb-1">Email:</p>
+        <p class="mb-4 text-gray-600">astrofact.india@gmail.com</p>
+        <p class="font-bold mb-1">Hours:</p>
+      </div>
+    </div>
+  </div> -->
+  <div class="max-w-3xl mx-auto px-4 py-10">
+    <h2 class="text-center font-extrabold text-gray-900 text-xl sm:text-2xl mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-6">
+      <div class="bg-white rounded-lg p-6 shadow-sm">
+        <p class="text-gray-900 mb-3">How accurate are your time calculations?</p>
+        <p class="text-gray-600 text-sm leading-relaxed">Our calculations have a 99.9% accuracy rate, verified through multiple methods and extensive quality checks.</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 shadow-sm">
+        <p class="text-gray-900 mb-3">How long does a consultation take?</p>
+        <p class="text-gray-600 text-sm leading-relaxed">Most consultations are completed within 3-7 business days, depending on the complexity of your request.</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 shadow-sm">
+        <p class="text-gray-900 mb-3">Do you offer international services?</p>
+        <p class="text-gray-600 text-sm leading-relaxed">Yes, we serve clients worldwide. All times are converted to your local timezone for accuracy.</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 shadow-sm">
+        <p class="text-gray-900 mb-3">What information do I need to provide?</p>
+        <p class="text-gray-600 text-sm leading-relaxed">We need your exact birth date, time (as close as possible), and place of birth. Additional documents may be helpful for verification.</p>
+      </div>
+    </div>
+  </div>
+    <!--<section class="max-w-6xl mx-auto mt-20 px-4">
+   <div class="bg-gradient-to-r from-blue-600 to-purple-700 rounded-xl py-8 px-6 text-center max-w-4xl mx-auto">
+    <h2 class="text-white font-semibold text-lg">
+     Stay Connected
+    </h2>
+    <p class="text-white text-sm mt-2">
+     Follow us for daily insights and time calculation tips
+    </p>
+    <div class="flex justify-center space-x-6 mt-6">
+     <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center">
+      <img alt="Mobile phone icon in a circular purple background" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/998f4a98-a922-468a-daa1-d8216112c711.jpg" width="24"/>
+     </div>
+     <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center">
+      <img alt="Red bird icon in a circular purple background" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/4af2f6f5-5e8a-467b-5d36-da8081dc298c.jpg" width="24"/>
+     </div>
+     <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center">
+      <img alt="Camera icon in a circular purple background" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/63ea47a0-2fd0-4038-d47b-7d1f85cb96ad.jpg" width="24"/>
+     </div>
+     <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center">
+      <img alt="Briefcase icon in a circular purple background" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/b270540a-29dc-4ebb-b62c-15b7fb6010cc.jpg" width="24"/>
+     </div>
+    </div>
+   </div>
+  </section> -->
+
+  
+   <footer class="bg-[#0B1226] text-[#D1D9FF]">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-0">
+    <div class="space-y-3 max-w-xs">
+     <div class="flex items-center gap-2">
+      <img alt="ChronoCalc logo icon with a checkmark inside a purple rounded square" class="w-20 h-16 rounded-md" height="32" src="astrofact_logo-removebg-preview.png" width="32"/>
+      <span class="font-semibold text-white text-sm">
+       AstroFact
+      </span>
+     </div>
+       <p class="text-sm leading-relaxed max-w-xs">
+      Leading experts in precise time calculations and astrological
+          consultations.
+     </p>
+    </div>
+    <div class="text-sm space-y-1 max-w-xs">
+     <h3 class="font-semibold text-white mb-2">
+      Quick Links
+     </h3>
+     <ul class="space-y-1">
+      <li>
+      <a href="index.html"> Home </a>
+      </li>
+      <li>
+       <a href="about.html"> About Us </a>
+      </li>
+      <li>
+       <a href="services.html">Services </a>
+      </li>
+      <li>
+       <a href="contact.html"> Contact  </a>
+      </li>
+      <li>
+       <a href="consult.html"> Consultation Form </a>
+      </li>
+     </ul>
+    </div>
+   <div class="text-sm space-y-1 max-w-xs">
+     <h3 class="font-semibold text-white mb-2">
+      Contact Info
+     </h3>
+     <p>
+      Email: astrofact.india@gmail.com
+     </p>
+     <p>
+      Phone: +91 92271 12025
+     </p>
+     <p>
+      Available: 9 AM - 6 PM
+     </p>
+    </div>
+   </div>
+   <div class="border-t border-[#1E2746]">
+    <p class="text-center text-[#A0AEC0] text-sm py-6">
+     © 2025 Astrofact. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>

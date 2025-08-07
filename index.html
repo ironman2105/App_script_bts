@@ -1,0 +1,385 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   ChronoCalc
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    .contact-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .contact-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .contact-link:hover {
+     color: #111827;
+   }
+   .contact-link:hover::before {
+     left: 0;
+   }
+
+       .about-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .about-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .about-link:hover {
+     color: #111827;
+   }
+   .about-link:hover::before {
+     left: 0;
+   }
+
+       .services-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .services-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .services-link:hover {
+     color: #111827;
+   }
+   .services-link:hover::before {
+     left: 0;
+   }
+
+       .consult-link {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     padding-left: 0.75rem; /* px-3 */
+     padding-right: 0.75rem;
+     padding-top: 0.5rem; /* py-2 */
+     padding-bottom: 0.5rem;
+     line-height: 1.25rem; /* leading-5 */
+     border-radius: 0.375rem; /* rounded-md */
+     color: #111827; /* text-gray-900 */
+     transition: color 0.3s ease;
+   }
+   .consult-link::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #e5e7eb; /* bg-gray-200 */
+     transition: left 0.3s ease;
+     z-index: -1;
+   }
+   .consult-link:hover {
+     color: #111827;
+   }
+   .consult-link:hover::before {
+     left: 0;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-50">
+  <header class="w-full border-b border-gray-200">
+   <nav class="max-w-9xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-20">
+    <a class="flex items-center space-x-3" href="#">
+     <img alt="ChronoCalc logo with checkmark icon in purple rounded square background" class="w-60 h-50 rounded-xl" height="90" src="astrofact_logo-removebg-preview.png" width="90"/>
+     <div class="leading-tight">
+      <p class="font-semibold text-gray-900 text-base">
+       ASTROFACT
+      </p>
+      <p class="text-xs text-gray-500 -mt-0.5">
+       to Know means to grow
+      </p>
+     </div>
+    </a>
+    <ul class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-900">
+     <li>
+      <a aria-current="page" class="bg-[#05081e] text-white rounded-md px-4 py-2" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="about-link" href="about.html">
+       About Us
+      </a>
+     </li>
+     <li>
+      <a class="services-link" href="services.html">
+       Services
+      </a>
+     </li>
+     <li>
+      <a class="contact-link" href="contact.html">
+       Contact
+      </a>
+     </li>
+     <li>
+      <a class="consult-link" href="consult1.html">
+       Consultation Form
+      </a>
+     </li>
+    </ul>
+    <a class="hidden md:inline-block border border-gray-300 rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">
+     View Reports
+    </a>
+   </nav>
+  </header>
+  <section class="relative overflow-hidden" style="background: linear-gradient(90deg, #2e52d2 0%, #6b46c1 50%, #1e2a6a 100%)">
+   <img alt="Decorative translucent circle on left side in blue shade" aria-hidden="true" class="absolute top-20 left-10 w-28 h-28 rounded-full opacity-20 pointer-events-none select-none" height="120" src="https://storage.googleapis.com/a1aa/image/2fb2fe01-45d6-433d-568a-0b0a5e447052.jpg" width="120"/>
+   <img alt="Decorative translucent circle on right side in dark blue shade" aria-hidden="true" class="absolute bottom-20 right-10 w-28 h-28 rounded-full opacity-20 pointer-events-none select-none" height="120" src="https://storage.googleapis.com/a1aa/image/4a9d28e2-0950-401f-716b-fac0dc1f8a08.jpg" width="120"/>
+   <div class="max-w-3xl mx-auto text-center py-20 px-6 sm:px-12 lg:px-0">
+    <span class="inline-block bg-[#7c5fcf] bg-opacity-40 text-white text-xs font-semibold rounded-md px-3 py-1 mb-4">
+     Professional Time Calculation Services
+    </span>
+    <h1 class="text-white font-extrabold text-4xl sm:text-5xl leading-tight">
+     Precision in Every
+     <br/>
+     <span class="text-yellow-400">
+      Moment
+     </span>
+    </h1>
+    <p class="mt-6 text-white text-lg max-w-xl mx-auto">
+     Expert time calculations for birth charts, astrological consultations,
+        and precise moment analysis. Your time matters to us.
+    </p>
+    <div class="mt-8 flex justify-center space-x-4">
+     <a class="bg-white text-blue-600 font-semibold rounded-md px-6 py-2 text-sm hover:bg-gray-100" href="#">
+      Start Consultation
+     </a>
+     <a class="border border-white text-white font-semibold rounded-md px-6 py-2 text-sm hover:bg-white hover:text-black transition" href="#">
+      Our Services
+     </a>
+    </div>
+   </div>
+  </section>
+   
+  <!--<section class="bg-gray-50 py-12">
+   <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-8 sm:gap-y-0 sm:gap-x-12 text-center">
+     <div>
+      <h3 class="text-blue-600 font-semibold text-2xl sm:text-3xl leading-tight">
+       25+
+      </h3>
+      <p class="mt-1 text-sm sm:text-base text-gray-600">
+       Years Experience
+      </p>
+     </div>
+     <div>
+      <h3 class="text-blue-600 font-semibold text-2xl sm:text-3xl leading-tight">
+       1000+
+      </h3>
+      <p class="mt-1 text-sm sm:text-base text-gray-600">
+       Clients Served
+      </p>
+     </div>
+     <div>
+      <h3 class="text-blue-600 font-semibold text-2xl sm:text-3xl leading-tight">
+       99.9%
+      </h3>
+      <p class="mt-1 text-sm sm:text-base text-gray-600">
+       Accuracy Rate
+      </p>
+     </div>
+     <div>
+      <h3 class="text-blue-600 font-semibold text-2xl sm:text-3xl leading-tight">
+       10+
+      </h3>
+      <p class="mt-1 text-sm sm:text-base text-gray-600">
+       Countries
+      </p>
+     </div>
+    </div>
+   </div>
+  </section> -->
+
+  <!-- Why Choose Section -->
+  <section class="bg-gray-100 py-16">
+   <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-1 text-center">
+    <h2 class="text-black font-extrabold text-xl sm:text-2xl md:text-3xl leading-tight">
+     Why Choose AstroFact?
+    </h2>
+    <p class="mt-3 text-gray-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+     We combine traditional expertise with modern precision to deliver the most accurate time calculations in the industry.
+    </p>
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+     <!-- Card 1 -->
+     <div class="bg-white rounded-lg border border-gray-200 p-6 flex flex-col items-center text-center">
+      <img alt="Pink alarm clock emoji icon representing precise birth time analysis" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/64a9fec7-d300-44cb-e965-be802a446ab8.jpg" width="40"/>
+      <h3 class="font-semibold text-black text-sm sm:text-base mb-2">
+       Precise Birth Time Analysis
+      </h3>
+      <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">
+       Advanced calculations for exact birth moments and astrological positioning
+      </p>
+     </div>
+     <!-- Card 2 -->
+     <div class="bg-white rounded-lg border border-gray-200 p-6 flex flex-col items-center text-center">
+      <img alt="Purple two person emoji icon representing professional consultations" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/47a98313-db70-40ec-deef-fa5278fd64c6.jpg" width="40"/>
+      <h3 class="font-semibold text-black text-sm sm:text-base mb-2">
+       Professional Consultations
+      </h3>
+      <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">
+       Expert guidance from certified time calculation specialists
+      </p>
+     </div>
+     <!-- Card 3 -->
+     <div class="bg-white rounded-lg border border-gray-200 p-6 flex flex-col items-center text-center">
+      <img alt="Bar chart emoji icon representing detailed reports" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/6b8b4386-a9b9-4154-5fdf-fa4cc65733a9.jpg" width="40"/>
+      <h3 class="font-semibold text-black text-sm sm:text-base mb-2">
+       Detailed Reports
+      </h3>
+      <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">
+       Comprehensive analysis with professional documentation
+      </p>
+     </div>
+     <!-- Card 4 -->
+     <div class="bg-white rounded-lg border border-gray-200 p-6 flex flex-col items-center text-center">
+      <img alt="Orange lightning bolt emoji icon representing fast processing" class="mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/89703b50-a888-40d1-88a5-4a8aed97bc1d.jpg" width="40"/>
+      <h3 class="font-semibold text-black text-sm sm:text-base mb-2">
+       Fast Processing
+      </h3>
+      <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">
+       Quick turnaround times with accurate results guaranteed
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <main class="py-20 px-4 sm:px-6 lg:px-8 flex justify-center">
+   <section class="max-w-4xl w-full bg-[#F0F4FF] border border-[#D1D9FF] rounded-xl p-8 text-center">
+    <h2 class="text-2xl font-normal mb-2">
+     Ready to Get Started?
+    </h2>
+    <p class="text-gray-500 mb-6 text-sm sm:text-base">
+     Fill out our consultation form and receive your detailed time analysis
+        report within 24-48 hours.
+    </p>
+    <div class="flex justify-center gap-4 flex-wrap">
+     <button class="bg-[#2563EB] text-white font-semibold rounded-md px-5 py-2.5 hover:bg-[#1e4bb8] transition" type="button">
+      Book Consultation
+     </button>
+     <button class="border border-[#2563EB] text-black font-semibold rounded-md px-5 py-2.5 hover:bg-[#e6f0ff] transition" type="button">
+      Contact Us First
+     </button>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-[#0B1226] text-[#D1D9FF]">
+   <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-0">
+    <div class="space-y-3 max-w-xs">
+     <div class="flex items-center gap-2">
+      <img alt="ChronoCalc logo icon with a checkmark inside a purple rounded square" class="w-20 h-16 rounded-md" height="32" src="astrofact_logo-removebg-preview.png" width="32"/>
+      <span class="font-semibold text-white text-sm">
+       AstroFact
+      </span>
+     </div>
+     <p class="text-sm leading-relaxed max-w-xs">
+      Leading experts in precise time calculations and astrological
+          consultations.
+     </p>
+    </div>
+    <div class="text-sm space-y-1 max-w-xs">
+     <h3 class="font-semibold text-white mb-2">
+      Quick Links
+     </h3>
+     <ul class="space-y-1">
+      <li>
+      <a href="index.html"> Home </a>
+      </li>
+      <li>
+       <a href="about.html"> About Us </a>
+      </li>
+      <li>
+       <a href="services.html">Services </a>
+      </li>
+      <li>
+       <a href="contact.html"> Contact  </a>
+      </li>
+      <li>
+       <a href="consult.html"> Consultation Form </a>
+      </li>
+     </ul>
+    </div>
+    <div class="text-sm space-y-1 max-w-xs">
+     <h3 class="font-semibold text-white mb-2">
+      Contact Info
+     </h3>
+     <p>
+      Email: astrofact.india@gmail.com
+     </p>
+     <p>
+      Phone: +91 92271 12025
+     </p>
+     <p>
+      Available: 9 AM - 6 PM
+     </p>
+    </div>
+   </div>
+   <div class="border-t border-[#1E2746]">
+    <p class="text-center text-[#A0AEC0] text-sm py-6">
+     © 2025 Astrofact. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
