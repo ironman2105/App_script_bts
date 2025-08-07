@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AstroFact Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit to Google Sheet</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .success {
+      color: green;
+    }
+  </style>
 </head>
 <body>
-  <h2>Contact Us</h2>
+  <h2>Contact Form</h2>
   <form id="myForm">
-    <label>Name:</label>
-    <input type="text" name="name" required><br><br>
-
-    <label>Email:</label>
-    <input type="email" name="email" required><br><br>
-
-    <label>Message:</label>
-    <textarea name="message" required></textarea><br><br>
-
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="contact" placeholder="Contact Number" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Submit</button>
+    <p id="response" class="success"></p>
   </form>
 
-  <p id="status"></p>
-
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxut1elS9Bw90jc-vgfm2KUmEac5XgmPJ9eFDrGQ5IL8KrkWWc1YOFNY1f-M9k8DhA/exec'; // 👈 paste your URL here
     const form = document.getElementById('myForm');
-    const status = document.getElementById('status');
-
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const data = Object.fromEntries(new FormData(form).entries());
+      const formData = new FormData(form);
+      const query = new URLSearchParams(formData).toString();
 
-      fetch(scriptURL, {
-        method: 'POST',
-        body: JSON.stringify(data),
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzubsPzpW6oq6FVZlwn9gP3hfb5BzMIc844wDhn-lzC4f-nRBOqF5YSvDK6A1hFLz-R/exec", {
+        method: "POST",
+        body: query,
         headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          status.textContent = 'Form submitted successfully!';
-          form.reset();
-        } else {
-          status.textContent = 'Failed to submit the form.';
-        }
-      })
-      .catch(error => {
-        console.error('Error!', error.message);
-        status.textContent = 'Error submitting form.';
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
       });
+
+      const result = await response.text();
+      document.getElementById("response").innerText = result;
+      form.reset();
     });
   </script>
 </body>
