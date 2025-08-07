@@ -229,15 +229,40 @@
 
       <div class="px-6 py-8 space-y-8">
         <!-- Personal Information Section -->
-         <form id="astroForm" enctype="multipart/form-data">
-  <input type="text" name="name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <input type="tel" name="phone" placeholder="Phone" required />
-  <input type="date" name="birthdate" required />
-  <input type="time" name="birthtime" required />
-  <input type="file" name="pancard" required />
+        <form id="myForm">
+  <input name="name" placeholder="Name">
+  <input name="email" placeholder="Email">
+  <textarea name="message" placeholder="Message"></textarea>
   <button type="submit">Submit</button>
 </form>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbxoA8226nnpbOta4p56Kd8cCrEChLhbFE5dlRPD9IqFDAqeSR0fUkhrUJOWhdTf_Jvq/exec", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then(res => {
+    alert("Submitted Successfully!");
+    form.reset();
+  }).catch(err => {
+    alert("Error submitting form.");
+    console.error(err);
+  });
+});
+</script>
+
       <!--<form id="astroForm">
   <input type="text" name="name" placeholder="Name" required />
   <input type="email" name="email" placeholder="Email" required />
@@ -249,7 +274,7 @@
   <button type="submit">Submit</button>
 </form>-->
 
-<script>
+<!--<script>
   const form = document.getElementById("astroForm");
 
   form.addEventListener("submit", async (e) => {
@@ -269,7 +294,7 @@
       alert("Something went wrong!");
     }
   });
-</script>
+</script>-->
 
   </div>
     <footer class="bg-[#0B1226] text-[#D1D9FF]">
